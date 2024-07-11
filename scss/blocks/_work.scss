@@ -1,0 +1,51 @@
+.work-section {
+    background-color: #1b262f;
+    background-image: url(../images/work-bg.png);
+    background-size: 545px 421px;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+.work__content--wrapper {
+    padding-top: 100px;
+    @include display($items: center, $space:space-between, $gap:0px);
+}
+.work__content {
+    width: 445px;
+}
+.work__content--title {
+    @include textStyle(
+        $FW: 400,
+        $FS: 48px,
+        $LH: 56px,
+        $CASE: capitalize,
+        $MB: 24px,
+        $CLR: #fbfcfe
+    );
+}
+.work__content--text {
+    @include textStyle(
+        $FW: 400,
+        $FS: 15px,
+        $LH: 28px,
+        $CASE: capitalize,
+        $MB: 32px,
+        $CLR: #afb3b7
+    );
+    font-family: Public Sans;
+}
+.work__content--btn {
+    width: 129px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #fbfcfe;
+    background-color: transparent;
+    @include textStyle(
+        $FW: 700,
+        $FS: 15px,
+        $LH: 17.63px,
+        $CASE: capitalize,
+        $MB: 0px,
+        $CLR: #fbfcfe
+    );
+}
